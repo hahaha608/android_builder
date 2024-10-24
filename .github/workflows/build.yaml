@@ -23,7 +23,6 @@ jobs:
       - name: Build the app
         working-directory: ./project
         run: ./gradlew build
-          ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
