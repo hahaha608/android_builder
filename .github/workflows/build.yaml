@@ -23,9 +23,6 @@ jobs:
       - name: Build the app
         working-directory: ./project
         run: chmod +x gradlew
-      - name: Build with Gradle
-        working-directory: ./project
-        run: ./gradlew build
       - name: Build the apk
         working-directory: ./project
         run: ./gradlew assembleDebug --stacktrace
